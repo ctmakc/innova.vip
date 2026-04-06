@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const services = [
+  'Private AI advisory for owners and principals',
+  'Confidential automation design for sensitive operations',
+  'High-trust strategic support for cross-border decisions'
+];
+---
+
+<BaseLayout
+  title="Innova.VIP | Private AI and Strategic Advisory"
+  description="Invitation-style private advisory for founders, principals, and high-trust operating decisions."
+>
+  <main class="min-h-screen bg-midnight text-champagne">
+    <section class="relative overflow-hidden border-b border-gold/20">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(214,180,106,0.18),transparent_30%)]"></div>
+      <div class="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
+        <p class="inline-flex rounded-full border border-gold/30 px-4 py-1 text-xs uppercase tracking-[0.28em] text-gold">
+          Private advisory
+        </p>
+        <h1 class="mt-6 max-w-4xl font-display text-5xl font-semibold leading-tight text-white md:text-7xl">
+          High-trust AI strategy for situations that do not belong on a public sales call.
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-champagne/80">
+          Innova.VIP is the private tier for founders, principals, and operators who need discretion, speed, and
+          strategic clarity across sensitive workflows, communication systems, and international decisions.
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="mailto:vip@innova.vip" class="rounded-full bg-gold px-7 py-3 font-semibold text-midnight transition hover:bg-champagne">
+            Request Private Access
+          </a>
+          <a href="#services" class="rounded-full border border-gold/30 px-7 py-3 font-semibold text-champagne transition hover:border-gold hover:text-white">
+            View Scope
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="mx-auto max-w-6xl px-6 py-20">
+      <div class="grid gap-6 md:grid-cols-3">
+        {services.map((service) => (
+          <article class="rounded-3xl border border-gold/20 bg-graphite p-8 shadow-card">
+            <p class="text-lg leading-8 text-champagne/85">{service}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="border-y border-gold/15 bg-graphite/70">
+      <div class="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-2">
+        <div>
+          <p class="text-sm uppercase tracking-[0.24em] text-gold">What fits here</p>
+          <h2 class="mt-4 font-display text-4xl text-white">Special situations, quiet builds, direct access.</h2>
+        </div>
+        <div class="space-y-4 text-lg leading-8 text-champagne/80">
+          <p>Use this lane for projects where the normal consulting funnel is too noisy, too broad, or too public.</p>
+          <p>Typical work includes private automation systems, operator-only decision support, cross-border structuring discussions, and discreet AI implementation planning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-6 py-20">
+      <div class="rounded-[2rem] border border-gold/20 bg-black/30 p-10 md:p-12">
+        <p class="text-sm uppercase tracking-[0.24em] text-gold">Contact</p>
+        <h2 class="mt-4 font-display text-4xl text-white">Start with a private brief.</h2>
+        <p class="mt-5 max-w-2xl text-lg leading-8 text-champagne/80">
+          Share the context, operating constraints, and urgency. If the fit is right, the next step is a direct,
+          confidential strategy conversation.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="mailto:vip@innova.vip" class="rounded-full bg-gold px-7 py-3 font-semibold text-midnight transition hover:bg-champagne">
+            vip@innova.vip
+          </a>
+          <a href="https://t.me/mmixua" class="rounded-full border border-gold/30 px-7 py-3 font-semibold text-champagne transition hover:border-gold hover:text-white">
+            Telegram
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
